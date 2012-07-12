@@ -1,0 +1,74 @@
+# Sample localization file for Spanish. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+es:
+  number:
+      currency:
+          format:
+              unit: "$US"
+              precision: 2
+              separator: ","
+              delimiter: "."
+              format: "%n&nbsp;%u"
+  layouts:
+      application:
+          title: "Publicaciones de Pragmatic"
+          home: "Inicio"
+          questions: "Preguntas"
+          news: "Noticias"
+          contact: "Contacto"
+#START:main
+  store:
+      index:
+          title_html: "Su Cat&aacute;logo de Pragmatic"
+          add_html: "A&ntilde;adir al Carrito"
+#END:main
+
+#START:cart
+  carts:
+      cart:
+          title: "Carrito de la Compra"
+          checkout: "Vaciar Carrito"
+          empty: "Comprar"
+#END:cart
+
+#START:orders
+  orders:
+      new:
+          legend: 'Por favor, introduzca sus datos'
+      form:
+          name: 'Nombre'
+          address_html: 'Direcci&oacute;n'
+          email: 'E-Mail'
+          pay_type: "Forma de pago"
+          pay_prompt_html: "Seleccione un m&eacute;todo de pago"
+          submit: "Realizar Pedido"
+#END:orders
+
+#START:errors
+  activerecord:
+      
+#END:errors
+#END:model
+#START:errors
+    errors:
+      messages:
+        inclusion: "no est&aacute; incluido en la lista"
+        blank:     "no puede quedar en blanco"
+  errors:
+    template:
+      body:        "Hay problemas con los siguientes campos:"
+      header:
+        one:       "1 error ha impedido que este %{model} se guarde"
+        other:     "%{count} errores han impedido que este %{model} se guarde"
+#END:errors
+
+  models:
+      order: "pedido"
+  attributes:
+      order:
+          address: "Direcci&oacute;n"
+          name: "Nombre"
+          email: "E-mail"
+          pay_type: "Forma de pago"
+          
+  thanks: "Gracias por su pedido"
